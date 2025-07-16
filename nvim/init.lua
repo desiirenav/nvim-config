@@ -1,5 +1,8 @@
 vim.loader.enable()
-vim.cmd "colorscheme nord"
+
+-- Theme
+vim.cmd.colorscheme("nord")
+
 local cmd = vim.cmd
 local opt = vim.o
 
