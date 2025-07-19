@@ -29,7 +29,6 @@ with final.pkgs.lib; let
   # }
   all-plugins = with pkgs.vimPlugins; [
     nord-nvim
-    nvim-treesitter-parsers.typst
   ];
 
   extraPackages = with pkgs; [
