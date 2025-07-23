@@ -28,7 +28,6 @@ with final.pkgs.lib; let
   #   ...
   # }
   all-plugins = with pkgs.vimPlugins; [
-    neovim-ayu
   ];
 
   extraPackages = with pkgs; [
