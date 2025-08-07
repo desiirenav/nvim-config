@@ -28,7 +28,7 @@ with final.pkgs.lib; let
   #   ...
   # }
   all-plugins = with pkgs.vimPlugins; [
-     rose-pine
+     neovim-ayu
   ];
 
   extraPackages = with pkgs; [
