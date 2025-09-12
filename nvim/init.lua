@@ -1,4 +1,5 @@
 vim.loader.enable()
+vim.cmd("colorscheme rose-pine-dawn")
 
 local cmd = vim.cmd
 local opt = vim.o
