@@ -10,6 +10,8 @@ local opt = vim.o
 
 -- See :h <option> to see what the options do
 
+-- colorscheme
+cmd("colorscheme kanagawa")
 -- Search down into subfolders
 opt.path = vim.o.path .. '**'
 
@@ -37,7 +39,6 @@ opt.splitbelow = true
 opt.cmdheight = 0
 
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
-opt.colorcolumn = '100'
 
 -- Configure Neovim diagnostic messages
 
