@@ -8,10 +8,10 @@
 
     # Add bleeding-edge plugins here.
     # They can be updated with `nix flake update` (make sure to commit the generated flake.lock)
-    oh-lucy-nvim = {
-      url = "github:yazeed1s1/oh-lucy.nvim";
-      flake = false;
-    };
+    # wf-nvim = {
+    #   url = "github:Cassin01/wf.nvim";
+    #   flake = false;
+    # };
   };
 
   outputs = inputs @ {
