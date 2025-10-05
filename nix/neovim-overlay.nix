@@ -32,7 +32,7 @@ with final.pkgs.lib; let
     # https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=vimPlugins
     # colorscheme
     oxocarbon-nvim
-    kanagawa-nvim
+    oh-lucy-nvim
     nvim-treesitter.withAllGrammars
     luasnip # snippets | https://github.com/l3mon4d3/luasnip/
     # nvim-cmp (autocompletion) and extensions
@@ -114,6 +114,19 @@ in {
   # This can be symlinked in the devShell's shellHook
   nvim-luarc-json = final.mk-luarc-json {
     plugins = all-plugins;
+  };
+
+  nixpkgs = {
+    overlays = [
+      (final: prev: {
+        vimPlugins = prev.vimPlugins // {
+          oh-lucy-nvim = prev.vimUtils.buildVimPlugin {
+            name = "oh-lucy-nvim";
+            src = inputs.oh-lucy-nvim;
+          };
+        };
+      })
+    ];
   };
 
   # You can add as many derivations as you like.
