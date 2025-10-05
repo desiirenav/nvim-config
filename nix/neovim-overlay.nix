@@ -116,18 +116,6 @@ in {
     plugins = all-plugins;
   };
 
-  nixpkgs = {
-    overlays = [
-      (final: prev: {
-        vimPlugins = prev.vimPlugins // {
-          oh-lucy-nvim = prev.vimUtils.buildVimPlugin {
-            name = "oh-lucy-nvim";
-            src = inputs.oh-lucy-nvim;
-          };
-        };
-      })
-    ];
-  };
 
   # You can add as many derivations as you like.
   # Use `ignoreConfigRegexes` to filter out config
