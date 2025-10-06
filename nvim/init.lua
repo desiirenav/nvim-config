@@ -11,6 +11,7 @@ local opt = vim.o
 -- See :h <option> to see what the options do
 
 -- colorscheme
+vim.o.termguicolors = true
 cmd("colorscheme oxocarbon")
 -- Search down into subfolders
 opt.path = vim.o.path .. '**'
