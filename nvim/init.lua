@@ -12,7 +12,7 @@ local opt = vim.o
 
 -- colorscheme
 vim.o.termguicolors = true
-cmd("colorscheme oxocarbon")
+cmd("colorscheme base2tone_lavender_dark")
 -- Search down into subfolders
 opt.path = vim.o.path .. '**'
 
