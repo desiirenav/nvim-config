@@ -31,7 +31,7 @@ with final.pkgs.lib; let
     # plugins from nixpkgs go in here.
     # https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=vimPlugins
     # colorscheme
-    gruvbox-nvim
+    nordic-nvim
     nvim-treesitter.withAllGrammars
     luasnip # snippets | https://github.com/l3mon4d3/luasnip/
     # nvim-cmp (autocompletion) and extensions
