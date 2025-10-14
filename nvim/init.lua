@@ -12,7 +12,7 @@ local opt = vim.o
 
 -- colorscheme
 vim.o.termguicolors = true
-cmd("colorscheme nordic")
+cmd("colorscheme nord")
 -- Search down into subfolders
 opt.path = vim.o.path .. '**'
 
