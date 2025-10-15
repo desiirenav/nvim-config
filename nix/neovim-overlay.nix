@@ -17,28 +17,6 @@ with final.pkgs.lib; let
     nord-nvim
     nvim-treesitter.withAllGrammars
     luasnip
-    nvim-cmp
-    cmp_luasnip
-    lspkind-nvim
-    cmp-nvim-lsp
-    cmp-nvim-lsp-signature-help
-    cmp-buffer
-    cmp-path
-    cmp-nvim-lua
-    cmp-cmdline
-    cmp-cmdline-history
-    telescope-nvim
-    telescope-fzy-native-nvim
-    vim-unimpaired
-    eyeliner-nvim
-    nvim-surround
-    nvim-treesitter-textobjects
-    nvim-ts-context-commentstring
-    nvim-unception
-    sqlite-lua
-    plenary-nvim
-    nvim-web-devicons
-    vim-repeat
     which-key-nvim
   ];
 
